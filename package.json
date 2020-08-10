@@ -1,0 +1,30 @@
+{
+  "name": "codeko-jobtest",
+  "version": "1.0.0",
+  "description": "Programming test for a Front End Developer position in [Codeko](http://codeko.com/).",
+  "main": "index.js",
+  "homepage": "https://firenz.github.io/codekp-jobtest/",
+  "author": "Alicia G. <alicia.guardenoalbertos@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "jobtest",
+    "codeko",
+    "react",
+    "react-query",
+    "typescript",
+    "webpack",
+    "babel",
+    "eslint",
+    "prettier"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Firenz/codeko-jobtest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Firenz/codeko-jobtest/issues"
+  }
+}
