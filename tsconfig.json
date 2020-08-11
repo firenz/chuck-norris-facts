@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["ES2019", "dom"],
-    "module": "commonjs",
+    "module": "ESNext",
     "target": "ES2019",
     "outDir": "dist/",
     "moduleResolution": "node",
@@ -30,7 +30,6 @@
       "containers": ["containers/"],
       "model": ["model/"],
       "pages": ["pages/"],
-      "styles": ["styles/"],
       "utils": ["utils/"],
     }
   },
