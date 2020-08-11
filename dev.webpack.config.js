@@ -1,5 +1,5 @@
-const { merge } = require("webpack-merge");
-const base = require("./base.webpack.config");
+const { merge } = require('webpack-merge')
+const base = require('./base.webpack.config')
 
 module.exports = merge(base, {
   mode: 'development',
@@ -39,4 +39,4 @@ module.exports = merge(base, {
     writeToDisk: true,
     stats: 'errors-only',
   },
-});
+})
