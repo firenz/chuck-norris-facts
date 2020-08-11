@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Programming test for a Front End Developer position in [Codeko](http://codeko.com/).",
   "main": "main.tsx",
-  "homepage": "https://firenz.github.io/codekp-jobtest/",
+  "homepage": "https://firenz.github.io/codeko-jobtest/",
   "author": "Alicia G. <alicia.guardenoalbertos@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -38,7 +38,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-query": "^2.5.13",
-    "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

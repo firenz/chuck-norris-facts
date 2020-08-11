@@ -12,7 +12,7 @@ module.exports = merge(base, {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
