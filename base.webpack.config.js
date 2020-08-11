@@ -10,7 +10,6 @@ const basePath = __dirname
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
-    alias: {},
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
   },
   entry: {
