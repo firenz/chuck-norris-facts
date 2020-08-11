@@ -1,7 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CheckerPlugin } = require('awesome-typescript-loader');
-const createStyledComponentsTransformer = require('typescript-plugin-styled-components').default;
-const styledComponentsTransformer = createStyledComponentsTransformer();
 const path = require("path");
 
 const basePath = __dirname;
@@ -41,7 +39,6 @@ module.exports = {
           useBabel: true,
           useCache: true,
           babelCore: '@babel/core',
-          getCustomTransformers: () => ({ before: [styledComponentsTransformer] })
         },
       },
       {
