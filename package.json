@@ -2,7 +2,7 @@
   "name": "codeko-jobtest",
   "version": "1.0.0",
   "description": "Programming test for a Front End Developer position in [Codeko](http://codeko.com/).",
-  "main": "index.js",
+  "main": "main.tsx",
   "homepage": "https://firenz.github.io/codekp-jobtest/",
   "author": "Alicia G. <alicia.guardenoalbertos@gmail.com>",
   "license": "MIT",

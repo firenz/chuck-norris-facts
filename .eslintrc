@@ -1,8 +1,26 @@
 {
   "extends": [
+    "standard",
+    "plugin:@imaginary-cloud/react",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": [
+    "standard",
+    "babel",
+    "react",
     "@imaginary-cloud/react",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "@typescript-eslint",
+    "eslint-plugin-html",
+    "eslint-plugin-import",
+    "eslint-plugin-jsx-a11y",
+    "eslint-plugin-prettier",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks"
   ],
   "globals": {
     "chrome": "writable"
@@ -10,9 +28,9 @@
   "rules": {
     "prettier/prettier": "error",
     "no-restricted-globals": 0,
+    "no-plusplus": 0,
     "react/prop-types": 0,
     "react/destructuring-assignment": 0,
-    "no-plusplus": 0,
     "react/jsx-filename-extension": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
@@ -34,14 +52,14 @@
     }
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "prettier",
-    "@typescript-eslint/eslint-plugin",
-    "eslint-plugin-html",
-    "eslint-plugin-import",
-    "eslint-plugin-jsx-a11y",
-    "eslint-plugin-prettier",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks"
-  ]
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  } 
 }
