@@ -23,6 +23,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": "./src/",
+    "paths": {
+      "assets": ["assets/"],
+      "api": ["api/"],
+      "components": ["components/"],
+      "containers": ["containers/"],
+      "model": ["model/"],
+      "pages": ["pages/"],
+      "styles": ["styles/"],
+      "utils": ["utils/"],
+    }
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "**/*.spec.{js, jsx, ts, tsx}", "./public", "./dist", "./.vscode"]
