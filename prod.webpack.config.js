@@ -1,11 +1,11 @@
-const { merge } = require("webpack-merge");
-const base = require("./base.webpack.config");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { merge } = require('webpack-merge')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const base = require('./base.webpack.config')
 
 module.exports = merge(base, {
   mode: 'production',
   output: {
-    publicPath: '/karumi-jobtest/',
+    publicPath: '/codeko-jobtest/',
     filename: '[name].[chunkhash].js',
   },
   module: {
@@ -34,4 +34,4 @@ module.exports = merge(base, {
       chunkFilename: '[id].css',
     }),
   ],
-});
+})
