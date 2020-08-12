@@ -30,6 +30,7 @@
       "containers": ["containers/"],
       "model": ["model/"],
       "pages": ["pages/"],
+      "styles": ["styles/"],
       "utils": ["utils/"],
     }
   },

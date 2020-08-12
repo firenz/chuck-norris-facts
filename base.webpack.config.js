@@ -24,7 +24,6 @@ module.exports = {
   },
   entry: {
     app: ['regenerator-runtime/runtime', './main.tsx'],
-    appStyles: ["./styles/theme.css"]
   },
   optimization: {
     splitChunks: {
