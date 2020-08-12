@@ -34,6 +34,6 @@
       "utils": ["utils/"],
     }
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "custom.d.ts"],
   "exclude": ["node_modules", "**/*.spec.{js, jsx, ts, tsx}", "./public", "./dist", "./.vscode"]
 }
