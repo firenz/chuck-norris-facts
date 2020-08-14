@@ -5,9 +5,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #a31418;
+    background-color: ${({ theme }) => theme.palette.main.background};
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: ${({ theme }) => theme.typography.sizes.sizeM};
   }
 
   ul {
