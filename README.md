@@ -1,4 +1,4 @@
-# Programming test for [Codeko](http://codeko.com/)
+# Programming test for [Codeko](http://codeko.com/) [![Build Status](https://travis-ci.com/Firenz/codeko-jobtest.svg?branch=master)](https://travis-ci.com/Firenz/codeko-jobtest)
 Programming test for a Front End Developer position in [Codeko](http://codeko.com/).
 
 ## Description of the project
