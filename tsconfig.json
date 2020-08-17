@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["ES2019", "dom"],
-    "module": "commonjs",
+    "module": "ESNext",
     "target": "ES2019",
     "outDir": "dist/",
     "moduleResolution": "node",
@@ -34,6 +34,6 @@
       "utils": ["utils/"],
     }
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "custom.d.ts"],
   "exclude": ["node_modules", "**/*.spec.{js, jsx, ts, tsx}", "./public", "./dist", "./.vscode"]
 }
