@@ -5,8 +5,9 @@ import { MainPage } from 'pages';
 
 export const App: React.FC = () => {
   return (
-    <React.Fragment>
-      <h1>Hello from React</h1>
-    </React.Fragment>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <MainPage />
+    </ThemeProvider>
   );
 };
