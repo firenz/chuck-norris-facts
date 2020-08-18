@@ -2,26 +2,12 @@ import * as React from 'react';
 import { CategoriesLayout } from './categories.styles';
 import { CategoryButton } from './CategoryButton';
 
-export const CategoriesContainer: React.FC = () => {
-  const categories: string[] = [
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock', 
-    'mock',
-  ];
+interface Props {
+  categories: string[];
+}
 
+export const CategoriesContainer: React.FC<Props> = (props: Props) => {
+  const { categories } = props;
   return (
     <CategoriesLayout>
       {categories.map((category: string, index: number) => (
