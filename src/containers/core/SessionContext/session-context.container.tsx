@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { loadData, saveData } from 'utils';
 
 interface Context {
   showMenu: boolean;
@@ -34,17 +35,20 @@ interface Props {
 
 export const SessionProvider: React.FC<Props> = (props: Props) => {
   const [showMenu, setShowMenu] = React.useState<boolean>(false);
-  const [facts, setFacts] = React.useState<string[]>([]);
+  const [facts, setFacts] = React.useState<string[]>(loadData('facts') || []);
 
   const addNewFact = (value: string) => {
-    const newFacts = [value, ...facts];
+    const oldFacts = facts;
+    const newFacts = [value, ...oldFacts];
     setFacts(newFacts);
   };
 
   const clearFacts = () => {
     const newFacts: string[] = [];
     setFacts(newFacts);
-  }
+  };
+
+  React.useEffect(() => saveData('facts', facts), [facts]);
 
   return (
     <SessionContext.Provider
@@ -53,7 +57,7 @@ export const SessionProvider: React.FC<Props> = (props: Props) => {
         updateMenuVisibility: setShowMenu,
         facts,
         addNewFact,
-        clearFacts
+        clearFacts,
       }}
     >
       {props.children}
