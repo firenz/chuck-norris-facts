@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Header, Main, Footer, MainTitle, ButtonsContainer, FactsContainer, MenuContainer } from 'containers';
+import { Header, Main, MainTitle, Footer } from 'layouts';
+import { ButtonsContainer, FactsContainer, MenuContainer } from 'pods';
 
 export const MainPage: React.FC = () => {
   return (
