@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { loadData, saveData } from 'utils';
+import { loadData, saveData } from 'common/utils';
 
 interface Context {
   showMenu: boolean;
