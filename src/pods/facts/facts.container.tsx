@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { SessionContext } from 'containers/core';
+import { SessionContext } from 'core/contexts';
+
 import { FactsLayout } from './facts.styles';
-import { NoDisplayingFact } from './NoDisplayingFact';
-import { FactsList } from './FactList';
+import { FactsList, NoDisplayingFact } from './components';
 
 export const FactsContainer: React.FC = () => {
   const { facts } = React.useContext(SessionContext);

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
-import { ButtonLayout } from 'components/Button';
+import { ButtonLayout } from 'common-app/Button';
 
 export const FactElementButtonLayout = styled(ButtonLayout)`
   position: absolute;

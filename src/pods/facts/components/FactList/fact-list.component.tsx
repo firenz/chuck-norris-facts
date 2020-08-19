@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FactListLayout } from './fact-list.styles';
-import { FactElement } from '../FactElement';
+import { FactElement } from '../FactElement/fact-element.container';
 
 interface Props {
   facts: string[];

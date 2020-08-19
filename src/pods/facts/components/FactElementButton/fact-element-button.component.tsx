@@ -2,13 +2,13 @@ import * as React from 'react';
 import { FactElementButtonLayout } from './fact-element-button.styles';
 
 interface Props {
-  copyToClipboard: () => void;
-  resetText: () => void;
+  onClick: () => void;
+  onMouseLeave: () => void;
   infoText: string;
 }
 
 export const FactElementButton: React.FC<Props> = (props: Props) => {
-  const { copyToClipboard, resetText, infoText } = props;
+  const { onClick: copyToClipboard, onMouseLeave: resetText, infoText } = props;
 
   const updateInfo = () => {
     copyToClipboard();
