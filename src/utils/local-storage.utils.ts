@@ -1,5 +1,3 @@
-import { stringify } from "querystring";
-
 export const saveData = (key: string, data: any) => {
   localStorage.setItem(key, JSON.stringify(data));
 };
