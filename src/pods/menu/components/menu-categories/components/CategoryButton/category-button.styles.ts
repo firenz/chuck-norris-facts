@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonLayout } from 'components/Button';
+import { ButtonLayout } from 'common-app/Button';
 
 export const CategoryButtonWrapper = styled.li`
   flex-grow: 0;

@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { useQuery } from 'react-query';
-import { getFactFromCategory } from 'api';
-import { SessionContext } from 'containers/core';
+import { SessionContext } from 'core/contexts';
+
 import { CategoryButtonComponent } from './category-button.component';
+import { getFactFromCategory } from '../../../../menu.api';
+import { mapperFactApiToVm } from '../../../../menu.mapper';
 
 interface Props {
   category: string;
@@ -13,7 +15,9 @@ export const CategoryButton: React.FC<Props> = (props: Props) => {
   const { category } = props;
   const { data, isFetching } = useQuery(
     `getFactFromCategory${category}`,
-    async () => getFactFromCategory(category)
+    async () => {
+      return mapperFactApiToVm(await getFactFromCategory(category));
+    },
   );
 
   const getFact = (category: string) => {

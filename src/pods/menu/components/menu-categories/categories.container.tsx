@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { CategoriesLayout } from './categories.styles';
-import { CategoryButton } from './CategoryButton';
+import { CategoryButton } from './components';
 
 interface Props {
   categories: string[];
