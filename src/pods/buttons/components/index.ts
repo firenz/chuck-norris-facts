@@ -1,2 +1,2 @@
-export * from './GetFactButton';
-export * from './ClearFactsButton';
+export * from './get-fact-button';
+export * from './clear-facts-button';

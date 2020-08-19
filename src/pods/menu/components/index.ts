@@ -1,2 +1,2 @@
-export * from './MenuTitle';
-export * from './RandomButton';
+export * from './menu-title';
+export * from './random-button';
