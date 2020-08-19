@@ -1,1 +1,0 @@
-export * from './fact-element-button.container';
