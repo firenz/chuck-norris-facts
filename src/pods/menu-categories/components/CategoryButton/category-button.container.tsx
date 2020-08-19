@@ -3,8 +3,8 @@ import { useQuery } from 'react-query';
 import { SessionContext } from 'core/contexts';
 
 import { CategoryButtonComponent } from './category-button.component';
-import { getFactFromCategory } from '../../../../menu.api';
-import { mapperFactApiToVm } from '../../../../menu.mapper';
+import { getFactFromCategory } from './category-button.api';
+import { mapperFactApiToVm } from './category-button.mapper';
 
 interface Props {
   category: string;

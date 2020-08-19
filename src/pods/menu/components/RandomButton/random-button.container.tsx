@@ -2,9 +2,9 @@ import * as React from 'react';
 import { useQuery } from 'react-query';
 import { SessionContext } from 'core';
 
-import { getRandomFact } from 'pods/menu/menu.api';
-import { mapperFactApiToVm } from 'pods/menu/menu.mapper';
 import { RandomButtonComponent } from './random-button.component';
+import { getRandomFact } from './random-button.api';
+import { mapperFactApiToVm } from './random-button.mapper';
 
 export const RandomButton: React.FC = () => {
   const { updateMenuVisibility, addNewFact } = React.useContext(SessionContext);

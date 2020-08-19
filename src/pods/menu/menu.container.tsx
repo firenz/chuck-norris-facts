@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useQuery } from 'react-query';
 import { SessionContext } from 'core';
+import { CategoriesContainer } from 'pods/menu-categories';
 
-import { RandomButton, MenuTitle, CategoriesContainer } from './components';
+import { RandomButton, MenuTitle } from './components';
 import { getCategoriesApi } from './menu.api';
 import { mapperCategoriesApiToVm } from './menu.mapper';
 import { MenuWrapper, MenuLayout } from './menu.styles';
