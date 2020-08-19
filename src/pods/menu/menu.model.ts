@@ -8,3 +8,6 @@ export interface FactApi {
   value: string;
 }
 export type CategoriesApi = string[];
+
+export type FactVm = string;
+export type CategoriesVm = string[];

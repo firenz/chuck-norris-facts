@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CategoryButtonLayout } from '../Categories/CategoryButton/category-button.styles';
+import { CategoryButtonLayout } from 'pods/menu/components/menu-categories/components/CategoryButton/category-button.styles';
 
 export const RandomButtonLayout = styled(CategoryButtonLayout)`
   width: 15.5rem;
