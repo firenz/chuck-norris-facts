@@ -3,7 +3,7 @@ import { Header, Main, Footer, MainTitle, ButtonsContainer, FactsContainer, Menu
 
 export const MainPage: React.FC = () => {
   return (
-    <React.Fragment>
+    <>
       <Header />
       <Main>
         <MainTitle>Chuck Norris Facts</MainTitle>
@@ -12,6 +12,6 @@ export const MainPage: React.FC = () => {
       </Main>
       <Footer />
       <MenuContainer />
-    </React.Fragment>
+    </>
   );
 };
