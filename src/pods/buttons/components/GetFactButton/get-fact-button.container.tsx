@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { SessionContext } from 'core/contexts';
+
 import { GetFactButtonComponent } from './get-fact-button.component';
-import { SessionContext } from 'containers/core';
 
 export const GetFactButton: React.FC = () => {
   const { updateMenuVisibility } = React.useContext(SessionContext);

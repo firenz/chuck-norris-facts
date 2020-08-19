@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { SessionContext } from 'containers/core';
+import { SessionContext } from 'core/contexts';
+
 import { ClearFactsButtonComponent } from './clear-facts-button.component';
 
 export const ClearFactsButton: React.FC = () => {

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ButtonsLayout } from './buttons.styles';
-import { GetFactButton } from './GetFactButton';
-import { ClearFactsButton } from './ClearFactsButton';
+import { ClearFactsButton, GetFactButton } from './components';
 
 export const ButtonsContainer: React.FC = () => {
   return (

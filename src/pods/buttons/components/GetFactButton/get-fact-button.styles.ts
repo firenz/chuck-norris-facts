@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonLayout } from 'components/Button';
+import { ButtonLayout } from 'common-app/Button';
 
 export const GetFactButtonLayout = styled(ButtonLayout)`
   padding: 1rem 2rem 1rem 0.3rem;
