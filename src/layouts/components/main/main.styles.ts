@@ -15,7 +15,7 @@ export const MainLayout = styled.main`
     ${({ theme }) => {
       const color: string = theme.palette.main.secondary;
       return rgba(color, 0);
-    }}, 
+    }},
     ${({ theme }) => theme.palette.main.background} 56%
-    );
+  );
 `;

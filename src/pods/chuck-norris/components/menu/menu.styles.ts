@@ -35,5 +35,3 @@ export const MenuLayout = styled.div`
   border-radius: 10px;
   background: ${({ theme }) => theme.palette.main.light};
 `;
-
-

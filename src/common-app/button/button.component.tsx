@@ -8,9 +8,5 @@ interface Props {
 
 export const Button: React.FC<Props> = (props: Props) => {
   const { onClick } = props;
-  return (
-    <ButtonLayout onClick={onClick}>
-      {props.children}
-    </ButtonLayout>
-  );
+  return <ButtonLayout onClick={onClick}>{props.children}</ButtonLayout>;
 };

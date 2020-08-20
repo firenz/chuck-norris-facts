@@ -11,8 +11,8 @@ export const RandomButton: React.FC = () => {
   const { data, isFetching, refetch } = useQuery(
     `getFactRandomFact`,
     async () => {
-      return mapperFactApiToVm(await getRandomFact()); 
-    }
+      return mapperFactApiToVm(await getRandomFact());
+    },
   );
 
   const getFact = () => {

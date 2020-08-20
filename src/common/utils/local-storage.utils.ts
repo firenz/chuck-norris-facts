@@ -5,4 +5,4 @@ export const saveData = (key: string, data: any) => {
 export const loadData = (key: string): any => {
   const data = localStorage.getItem(key) || 'null';
   return JSON.parse(data);
-}
+};

@@ -16,9 +16,8 @@ export const GetFactButtonLayout = styled(ButtonLayout)`
   &::before {
     content: '👊';
     margin: 0 0.8rem;
-    text-shadow: 
-      -1px -1px 0 ${({ theme }) => theme.palette.main.dark}, 
-      1px -1px 0 ${({ theme }) => theme.palette.main.dark}, 
+    text-shadow: -1px -1px 0 ${({ theme }) => theme.palette.main.dark},
+      1px -1px 0 ${({ theme }) => theme.palette.main.dark},
       -1px 1px 0 ${({ theme }) => theme.palette.main.dark},
       1px 1px 0 ${({ theme }) => theme.palette.main.dark};
   }

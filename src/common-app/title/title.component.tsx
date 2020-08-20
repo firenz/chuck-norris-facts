@@ -6,9 +6,5 @@ interface Props {
 }
 
 export const Title: React.FC<Props> = (props: Props) => {
-  return (
-    <TitleLayout>
-      {props.children}
-    </TitleLayout>
-  );
+  return <TitleLayout>{props.children}</TitleLayout>;
 };

@@ -9,7 +9,7 @@ export const FooterLayout = styled.footer`
   width: 100vw;
   padding: 4rem 0.5rem 0.5rem;
 
-  color: ${({ theme }) => theme.palette.text.primary};;
+  color: ${({ theme }) => theme.palette.text.primary};
   font-weight: bold;
   text-align: center;
   background: linear-gradient(
