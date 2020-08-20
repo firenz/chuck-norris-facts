@@ -28,7 +28,7 @@ export const CategoryButton: React.FC<Props> = (props: Props) => {
   };
 
   return (
-    <CategoryButtonComponent onClick={() => getFact(category)}>
+    <CategoryButtonComponent onClick={() => getFact}>
       {category}
     </CategoryButtonComponent>
   );
