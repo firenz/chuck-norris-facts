@@ -28,11 +28,10 @@ export const ClearFactsButtonLayout = styled(ButtonLayout)`
 
     &::before {
       font-size: ${({ theme }) => theme.typography.sizes.sizeL};
-      text-shadow: 
-      -1px -1px 0 ${({ theme }) => theme.palette.main.dark},
-      1px -1px 0 ${({ theme }) => theme.palette.main.dark},
-      -1px 1px 0 ${({ theme }) => theme.palette.main.dark},
-      1px 1px 0 ${({ theme }) => theme.palette.main.dark};
+      text-shadow: -1px -1px 0 ${({ theme }) => theme.palette.main.dark},
+        1px -1px 0 ${({ theme }) => theme.palette.main.dark},
+        -1px 1px 0 ${({ theme }) => theme.palette.main.dark},
+        1px 1px 0 ${({ theme }) => theme.palette.main.dark};
     }
   }
 `;

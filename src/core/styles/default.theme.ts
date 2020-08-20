@@ -1,6 +1,6 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components';
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
     palette: {
       main: {
@@ -81,4 +81,4 @@ export const theme: DefaultTheme = {
       sizeXXXL: `4rem`,
     },
   },
-}
+};

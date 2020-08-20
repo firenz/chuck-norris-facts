@@ -20,7 +20,7 @@ export const CategoryButton: React.FC<Props> = (props: Props) => {
     },
   );
 
-  const getFact = (category: string) => {
+  const getFact = () => {
     if (!isFetching) {
       addNewFact(data || 'Error loading fact');
       updateMenuVisibility(false);

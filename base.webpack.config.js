@@ -1,23 +1,23 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CheckerPlugin } = require('awesome-typescript-loader')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CheckerPlugin } = require('awesome-typescript-loader');
 const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
-  .default
-const styledComponentsTransformer = createStyledComponentsTransformer()
-const path = require('path')
+  .default;
+const styledComponentsTransformer = createStyledComponentsTransformer();
+const path = require('path');
 
-const basePath = __dirname
+const basePath = __dirname;
 
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
     alias: {
-      assets: path.resolve(__dirname, "./src/assets/"),
-      core: path.resolve(__dirname,"./src/core/"),
-      common: path.resolve(__dirname, "./src/common/"),
-      'common-app': path.resolve(__dirname, "./src/common-app/"),
-      layouts: path.resolve(__dirname,"./src/layouts/"),
-      pods: path.resolve(__dirname,"./src/pods/"),
-      scenes: path.resolve(__dirname, "./src/scenes/")
+      assets: path.resolve(__dirname, './src/assets/'),
+      core: path.resolve(__dirname, './src/core/'),
+      common: path.resolve(__dirname, './src/common/'),
+      'common-app': path.resolve(__dirname, './src/common-app/'),
+      layouts: path.resolve(__dirname, './src/layouts/'),
+      pods: path.resolve(__dirname, './src/pods/'),
+      scenes: path.resolve(__dirname, './src/scenes/'),
     },
     extensions: ['.js', '.ts', '.jsx', '.tsx'],
   },
@@ -73,4 +73,4 @@ module.exports = {
     }),
     new CheckerPlugin(),
   ],
-}
+};
