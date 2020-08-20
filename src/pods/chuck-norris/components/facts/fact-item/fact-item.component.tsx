@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { FactElementLayout } from './fact-element.styles';
-import { FactElementButton } from './fact-element-button.component';
+import { FactElementLayout } from './fact-item.styles';
+import { FactElementButton } from './fact-item-button.component';
 
 interface Props {
   fact: string;

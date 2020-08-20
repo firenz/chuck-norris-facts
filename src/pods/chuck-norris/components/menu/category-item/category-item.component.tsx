@@ -3,7 +3,7 @@ import * as React from 'react';
 import {
   CategoryButtonWrapper,
   CategoryButtonLayout,
-} from './category-button.styles';
+} from './category-item.styles';
 
 interface Props {
   children: any;

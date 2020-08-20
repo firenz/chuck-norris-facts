@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { FactElementComponent } from './fact-element.component';
+import { FactElementComponent } from './fact-item.component';
 
 interface Props {
   fact: string;

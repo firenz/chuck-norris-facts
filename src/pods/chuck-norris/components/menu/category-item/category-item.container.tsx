@@ -4,7 +4,7 @@ import { SessionContext } from 'core/contexts';
 
 import { mapperFactApiToVm } from 'pods/chuck-norris/chuck-norris.mapper';
 import { getFactFromCategory } from 'pods/chuck-norris/api';
-import { CategoryButtonComponent } from './category-button.component';
+import { CategoryButtonComponent } from './category-item.component';
 
 interface Props {
   category: string;

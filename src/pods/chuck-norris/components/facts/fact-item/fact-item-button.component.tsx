@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { FactElementButtonLayout } from './fact-element-button.styles';
+import { FactElementButtonLayout } from './fact-item-button.styles';
 
 interface Props {
   onClick: () => void;
