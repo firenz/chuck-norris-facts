@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { TitleLayout } from 'common-app/Title';
+import { TitleLayout } from 'common-app/title';
 
 export const MainTitleLayout = styled(TitleLayout)`
   color: ${({ theme }) => theme.palette.text.primary};
