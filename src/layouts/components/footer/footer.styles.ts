@@ -29,17 +29,3 @@ export const FooterLayout = styled.footer`
     width: auto;
   }
 `;
-
-export const Link = styled.a`
-  padding-left: 0.3rem;
-
-  color: ${({ theme }) => theme.palette.link.normal};
-
-  &:hover {
-    color: ${({ theme }) => theme.palette.link.hover};
-  }
-
-  &:visited {
-    color: ${({ theme }) => theme.palette.link.visited};
-  }
-`;
