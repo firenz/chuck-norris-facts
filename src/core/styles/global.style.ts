@@ -5,8 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: ${({ theme }) => theme.palette.main.background};
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: ${({ theme }) => theme.palette.main.secondary};
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: ${({ theme }) => theme.typography.sizes.sizeM};
   }
 
