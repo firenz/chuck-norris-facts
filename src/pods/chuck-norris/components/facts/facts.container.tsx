@@ -1,16 +1,23 @@
 import * as React from 'react';
-import { SessionContext } from 'core/contexts';
+import { SessionContext } from 'pods/chuck-norris/chuck-norris.context';
+import { FactVm } from 'pods/chuck-norris/chuck-norris.vm';
 
-import { FactsLayout } from './facts.styles';
-import { FactsList } from './fact-list';
-import { NoDisplayingFact } from './no-displaying-fact';
+import { FactsWrapper } from './facts.styles';
+import { FactCard } from './fact-card';
 
 export const FactsContainer: React.FC = () => {
   const { facts } = React.useContext(SessionContext);
 
   return (
-    <FactsLayout>
-      {facts.length > 0 ? <FactsList facts={facts} /> : <NoDisplayingFact />}
-    </FactsLayout>
+    <FactsWrapper>
+      {facts.map((fact: FactVm, index: number) => (
+        <FactCard
+          key={index}
+          id={fact.id}
+          category={fact.category}
+          fact={fact.fact}
+        />
+      ))}
+    </FactsWrapper>
   );
 };
