@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterLayout = styled.footer`
+  z-index: 2;
+
   padding: 0.75rem 3rem;
 
   color: ${({ theme }) => theme.palette.text.primary};
