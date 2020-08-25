@@ -2,7 +2,12 @@ import { FactApi, CategoriesApi, CategoryApi } from './api';
 import { FactVm, CategoriesVm, CategoryVm } from './chuck-norris.vm';
 
 export const mapperFactApiToVm = (factApi: FactApi): FactVm => {
-  return factApi.value as FactVm;
+  const factVm: FactVm = {
+    id: 0,
+    category: '',
+    fact: factApi.value,
+  };
+  return factVm;
 };
 
 export const mapperCategoryApiToVm = (categoryApi: CategoryApi): CategoryVm => {
