@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     background: url(${mountainBackground}) center no-repeat;
   }
 
