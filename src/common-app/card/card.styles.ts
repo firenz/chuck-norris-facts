@@ -21,4 +21,8 @@ export const CardLayout = styled.div`
   text-align: left;
 
   color: ${({ theme }) => theme.palette.text.grey};
+
+  @media (min-width: 980px) {
+    max-width: 28.75rem;
+  }
 `;
