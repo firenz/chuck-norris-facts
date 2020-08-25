@@ -1,41 +1,55 @@
 import styled from 'styled-components';
-import { ButtonLayout } from 'common-app/button';
 
-export const CategoryButtonWrapper = styled.li`
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 40%;
+export const CategoryItemLayout = styled.button`
+  padding: 1rem;
 
-  margin: 1rem 0rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  text-align: left;
+  text-transform: capitalize;
 
-  @media (max-width: 768px) {
-    flex-basis: 50%;
+  color: ${({ theme }) => theme.palette.main.dark};
+  background: ${({ theme }) => theme.palette.main.light2};
 
-    margin: 0.5rem 0;
-  }
-`;
-
-export const CategoryButtonLayout = styled(ButtonLayout)`
-  width: 10.5rem;
-
-  padding: 1rem 2rem;
-
-  font-size: ${({ theme }) => theme.typography.sizes.sizeL};
-  font-weight: bold;
-  text-align: center;
-
-  border-radius: 50px;
+  border: none;
+  border-bottom: 1px solid ${({ theme }) => theme.palette.main.grey};
 
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.palette.text.primary};
-    background-color: ${({ theme }) => theme.palette.main.accent};
+    background: ${({ theme }) => theme.palette.main.secondary};
+    color: ${({ theme }) => theme.palette.main.light2};
   }
 
-  @media (max-width: 768px) {
-    width: 7rem;
-    padding: 0.7rem 0;
+  &:first-child {
+    border-top: 1px solid ${({ theme }) => theme.palette.main.grey};
+  }
 
-    font-size: ${({ theme }) => theme.typography.sizes.sizeM};
+  @media (min-width: 980px) {
+    /* width: 11.125rem;
+    height: 3.75rem; */
+
+    min-width: 11.125rem;
+
+    margin: 0.5rem;
+    padding: 1rem 1.875rem;
+
+    background-color: ${({ theme }) => theme.palette.main.secondary};
+
+    border: none;
+    border-radius: 4px;
+
+    color: ${({ theme }) => theme.palette.main.light2};
+    line-height: 27px;
+    text-align: center;
+
+    &:first-child {
+      background-color: ${({ theme }) => theme.palette.main.accent};
+    }
+
+    &:hover {
+      background-color: ${({ theme }) => theme.palette.main.primary};
+    }
   }
 `;
