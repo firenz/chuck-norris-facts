@@ -6,8 +6,8 @@ export const ChuckNorrisComponent: React.FC = () => {
   return (
     <>
       <ButtonsContainer />
-      <FactsContainer />
       <MenuContainer />
+      <FactsContainer />
     </>
   );
 };
