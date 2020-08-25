@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { mountainBackground } from 'assets/svg';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -6,17 +7,33 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     height: 100%;
     background-color: ${({ theme }) => theme.palette.main.secondary};
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 
+      ${({ theme }) => theme.typography.fonts[0]}, 
+      ${({ theme }) => theme.typography.fonts[1]}, 
+      ${({ theme }) => theme.typography.fonts[2]}, 
+      sans-serif;
     font-size: ${({ theme }) => theme.typography.sizes.sizeM};
   }
 
-  ul {
-    list-style: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
+  button {
+    font-family: 
+      ${({ theme }) => theme.typography.fonts[0]}, 
+      ${({ theme }) => theme.typography.fonts[1]}, 
+      ${({ theme }) => theme.typography.fonts[2]}, 
+      sans-serif;
+    border: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  @media (min-width: 800px) {
+    background: url(${mountainBackground}) center no-repeat;
   }
 
   #root {
