@@ -1,16 +1,13 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { theme, GlobalStyle } from 'styles';
-import { MainPage } from 'pages';
-import { SessionProvider } from 'containers/core';
+import { theme, GlobalStyle } from 'core';
+import { MainPage } from 'scenes';
 
 export const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <SessionProvider>
-        <GlobalStyle />
-        <MainPage />
-      </SessionProvider>
+      <GlobalStyle />
+      <MainPage />
     </ThemeProvider>
   );
 };

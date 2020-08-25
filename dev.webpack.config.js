@@ -1,5 +1,5 @@
-const { merge } = require('webpack-merge')
-const base = require('./base.webpack.config')
+const { merge } = require('webpack-merge');
+const base = require('./base.webpack.config');
 
 module.exports = merge(base, {
   mode: 'development',
@@ -15,7 +15,7 @@ module.exports = merge(base, {
         use: ['css-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|jpe?g|gif)$/,
         exclude: /node_modules/,
         use: {
           loader: 'url-loader',
@@ -39,4 +39,4 @@ module.exports = merge(base, {
     writeToDisk: true,
     stats: 'errors-only',
   },
-})
+});
