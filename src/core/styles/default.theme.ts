@@ -69,7 +69,7 @@ export const theme: DefaultTheme = {
     },
   },
   typography: {
-    fonts: [`Arial`, `Helvetica`],
+    fonts: [`Poppins`, `Arial`, `Helvetica`],
     sizes: {
       sizeXXS: `0.25rem`,
       sizeXS: `0.5rem`,
