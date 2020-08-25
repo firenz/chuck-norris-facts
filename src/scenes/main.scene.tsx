@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ChuckNorrisContainer } from 'pods';
 import { AppLayout } from 'layouts';
+import { ChuckNorrisContainer } from 'pods';
 
 export const MainPage: React.FC = () => {
   return (

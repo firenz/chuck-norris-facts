@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { FooterLayout, Link } from './footer.styles';
+import { Link } from 'common-app/link';
+
+import { FooterLayout } from './footer.styles';
 
 export const Footer: React.FC = () => {
   return (

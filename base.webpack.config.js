@@ -64,6 +64,19 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader',
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+              name: './media/[hash].[name].[ext]',
+              esModule: false,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [

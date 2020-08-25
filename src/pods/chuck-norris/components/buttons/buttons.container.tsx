@@ -1,14 +1,24 @@
 import * as React from 'react';
+import { SessionContext } from 'pods/chuck-norris/chuck-norris.context';
 
-import { ButtonsLayout } from './buttons.styles';
-import { GetFactButton } from './get-fact-button';
-import { ClearFactsButton } from './clear-facts-button';
+import { ButtonsWrapperLayout } from './buttons.styles';
+import { Initial } from './initial';
+import { GetCategoryFact } from './get-category-fact';
+import { Dots } from './dots';
+import { ClearFacts } from './clear-facts';
 
 export const ButtonsContainer: React.FC = () => {
-  return (
-    <ButtonsLayout>
-      <GetFactButton />
-      <ClearFactsButton />
-    </ButtonsLayout>
-  );
+  const { facts, selectedCategory } = React.useContext(SessionContext);
+
+  if (facts.length === 0 && selectedCategory === '') {
+    return <Initial />;
+  } else {
+    return (
+      <ButtonsWrapperLayout>
+        <GetCategoryFact />
+        <Dots />
+        <ClearFacts />
+      </ButtonsWrapperLayout>
+    );
+  }
 };

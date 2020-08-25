@@ -9,12 +9,15 @@ declare module 'styled-components' {
         accent: string;
         background: string;
         light: string;
+        light2: string;
+        grey: string;
         dark: string;
       };
       text: {
         primary: string;
         secondary: string;
         accent: string;
+        grey: string;
       };
       link: {
         normal: string;
@@ -51,12 +54,15 @@ export const theme: DefaultTheme = {
       accent: `#f05b22`,
       background: `#a31418`,
       light: `#fff5ee`,
+      light2: `#fffcfa`,
+      grey: `#e7e7e7`,
       dark: `#000`,
     },
     text: {
       primary: `#fff5ee`,
       secondary: `#8d0008`,
       accent: `#000`,
+      grey: `#333`,
     },
     link: {
       normal: `#ffac95`,
@@ -65,14 +71,14 @@ export const theme: DefaultTheme = {
     },
     info: {
       success: `#5abab6`,
-      error: `#dd2c00`,
+      error: `#d83338`,
     },
   },
   typography: {
-    fonts: [`Arial`, `Helvetica`],
+    fonts: [`Poppins`, `Arial`, `Helvetica`],
     sizes: {
       sizeXXS: `0.25rem`,
-      sizeXS: `0.5rem`,
+      sizeXS: `0.625rem`,
       sizeS: `0.75rem`,
       sizeM: `1rem`,
       sizeL: `1.25rem`,

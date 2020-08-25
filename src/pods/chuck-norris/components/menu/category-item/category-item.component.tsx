@@ -1,23 +1,21 @@
 import * as React from 'react';
 
-import {
-  CategoryButtonWrapper,
-  CategoryButtonLayout,
-} from './category-item.styles';
+import { CategoryItemLayout } from './category-item.styles';
 
 interface Props {
-  children: any;
+  category: string;
   onClick: () => void;
 }
 
-export const CategoryButtonComponent: React.FC<Props> = (props: Props) => {
-  const { onClick } = props;
+export const CategoryItemComponent: React.FC<Props> = (props: Props) => {
+  const { category, onClick } = props;
 
   return (
-    <CategoryButtonWrapper>
-      <CategoryButtonLayout onClick={onClick}>
-        {props.children}
-      </CategoryButtonLayout>
-    </CategoryButtonWrapper>
+    <CategoryItemLayout
+      onClick={onClick}
+      aria-label={`press to select ${category} as current category when pressing the fact generator button and exit menu`}
+    >
+      {category}
+    </CategoryItemLayout>
   );
 };

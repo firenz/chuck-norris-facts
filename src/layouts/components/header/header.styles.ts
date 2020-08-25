@@ -1,22 +1,33 @@
 import styled from 'styled-components';
-import { rgba } from 'polished';
-import { chuckBackground } from 'assets/svg';
 
 export const HeaderLayout = styled.header`
-  margin-bottom: -17rem;
-  height: 35rem;
-  background: linear-gradient(
-      ${({ theme }) => {
-        const color: string = theme.palette.main.secondary;
-        return rgba(color, 0);
-      }},
-      ${({ theme }) => {
-          const color: string = theme.palette.main.secondary;
-          return rgba(color, 0.5);
-        }}
-        43%,
-      ${({ theme }) => theme.palette.main.background}
-    ),
-    url(${chuckBackground}) center 1.5rem fixed no-repeat
-      ${({ theme }) => theme.palette.main.secondary};
+  @media (min-width: 980px) {
+    position: fixed;
+    top: 4rem;
+    left: 16%;
+    z-index: 15;
+
+    margin-left: -3rem;
+  }
+`;
+
+export const Character = styled.img`
+  height: 20rem;
+  margin-top: 1rem;
+
+  @media (min-width: 980px) {
+    width: 401px;
+    height: 376.45px;
+  }
+`;
+
+export const Logo = styled.img`
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translate(-50%);
+
+  @media (min-width: 980px) {
+    margin-top: 6%;
+  }
 `;

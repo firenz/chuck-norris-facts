@@ -1,15 +1,31 @@
 import styled from 'styled-components';
 
-export const FactsLayout = styled.div`
-  justify-self: center;
-  flex-grow: 1;
+export const FactsWrapper = styled.div`
+  z-index: 2;
 
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 
-  max-width: 40rem;
-  width: 95%;
-  padding-bottom: 1rem;
+  margin-bottom: 4.375rem;
+
+  @media (max-width: 393px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: 979px) {
+    margin-bottom: 4.375rem;
+  }
+
+  @media (min-width: 980px) {
+    align-self: flex-end;
+    margin-right: 0%;
+  }
+
+  @media (min-width: 1200px) {
+    align-self: center;
+    margin-right: -35%;
+  }
 `;
