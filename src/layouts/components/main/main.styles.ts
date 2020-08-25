@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { rgba } from 'polished';
 
 export const MainLayout = styled.main`
   flex-grow: 1;
@@ -9,13 +8,9 @@ export const MainLayout = styled.main`
   align-items: center;
   justify-content: flex-start;
 
-  margin-bottom: 1rem;
+  margin-top: -12rem;
+  padding-top: 16rem;
 
-  background: linear-gradient(
-    ${({ theme }) => {
-      const color: string = theme.palette.main.secondary;
-      return rgba(color, 0);
-    }},
-    ${({ theme }) => theme.palette.main.background} 56%
-  );
+  @media (min-width: 800px) {
+  }
 `;
