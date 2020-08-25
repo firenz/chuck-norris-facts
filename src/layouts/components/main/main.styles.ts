@@ -11,6 +11,6 @@ export const MainLayout = styled.main`
   margin-top: -12rem;
   padding-top: 16rem;
 
-  @media (min-width: 800px) {
+  @media (min-width: 980px) {
   }
 `;
