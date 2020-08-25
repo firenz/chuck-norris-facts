@@ -32,10 +32,6 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
-  @media (min-width: 900px) {
-    background: url(${mountainBackground}) center no-repeat;
-  }
-
   #root {
     min-height: 100vh;
     text-align: center;
