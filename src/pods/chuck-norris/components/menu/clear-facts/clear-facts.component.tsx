@@ -8,5 +8,7 @@ interface Props {
 
 export const ClearFactsComponent: React.FC<Props> = (props: Props) => {
   const { onClick } = props;
-  return <ClearFactsLayout onClick={onClick}>{'clear all facts'}</ClearFactsLayout>;
+  return (
+    <ClearFactsLayout data-testid="clear-facts-component" onClick={onClick}>{'clear all facts'}</ClearFactsLayout>
+  );
 };
