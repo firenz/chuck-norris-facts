@@ -12,6 +12,7 @@ export const CategoryItemComponent: React.FC<Props> = (props: Props) => {
 
   return (
     <CategoryItemLayout
+      data-testid="category-item-component"
       onClick={onClick}
       aria-label={`press to select ${category} as current category when pressing the fact generator button and exit menu`}
     >

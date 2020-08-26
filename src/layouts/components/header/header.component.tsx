@@ -4,7 +4,7 @@ import { chuckCharacter, chuckLogo } from 'assets/svg';
 
 export const Header: React.FC = () => {
   return (
-    <HeaderLayout>
+    <HeaderLayout data-testid="header-layout">
       <Character
         src={chuckCharacter}
         alt="Chuck Norris face staring at your face"

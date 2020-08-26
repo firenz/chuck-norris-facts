@@ -11,7 +11,7 @@ interface Props {
 export const Card: React.FC<Props> = (props: Props) => {
   const { title, content, action } = props;
   return (
-    <CardLayout>
+    <CardLayout data-testid="card-component">
       {title}
       {content}
       {action}

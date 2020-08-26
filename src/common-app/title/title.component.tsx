@@ -6,5 +6,7 @@ interface Props {
 }
 
 export const Title: React.FC<Props> = (props: Props) => {
-  return <TitleLayout>{props.children}</TitleLayout>;
+  return (
+    <TitleLayout data-testid="title-component">{props.children}</TitleLayout>
+  );
 };

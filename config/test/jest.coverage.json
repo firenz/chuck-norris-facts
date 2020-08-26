@@ -1,0 +1,30 @@
+{
+  "preset": "ts-jest",
+  "restoreMocks": true,
+  "rootDir": "../../",
+  "moduleDirectories": ["<rootDir>/src", "node_modules"],
+  "setupFilesAfterEnv": ["<rootDir>/config/test/setup-after.ts"],
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true,
+  "coverageReporters": ["text", "html"],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "config/test",
+    ".vscode",
+    ".awcache",
+    "index.ts",
+    "main.tsx"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 20,
+      "functions": 50,
+      "lines": 50,
+      "statements": 10
+    }
+  },
+  "collectCoverageFrom": ["**/*.{ts,tsx}"],
+  "moduleNameMapper": {
+    "\\.(gif|png|jpe?g|ttf|eot|svg)$": "<rootDir>/config/test/fileMock.js"  
+  }
+}

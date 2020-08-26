@@ -10,7 +10,7 @@ interface Props {
 export const CategoriesContainer: React.FC<Props> = (props: Props) => {
   const { categories } = props;
   return (
-    <CategoriesLayout>
+    <CategoriesLayout data-testid="categories-component">
       <CategoryItem key={0} category={'random'} />
       {categories.map((category: string, index: number) => (
         <CategoryItem key={index + 1} category={category} />

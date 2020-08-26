@@ -11,6 +11,7 @@ export const InitialComponent: React.FC<Props> = (props: Props) => {
 
   return (
     <InitialLayout
+      data-testid="initial-component"
       onClick={onClick}
       aria-label="Press to open category menu to choose a new category to get facts"
     >

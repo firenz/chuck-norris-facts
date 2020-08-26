@@ -8,5 +8,9 @@ interface Props {
 }
 
 export const Link: React.FC<Props> = (props: Props) => {
-  return <LinkLayout href={props.href}>{props.children}</LinkLayout>;
+  return (
+    <LinkLayout data-testid="link-component" href={props.href}>
+      {props.children}
+    </LinkLayout>
+  );
 };
