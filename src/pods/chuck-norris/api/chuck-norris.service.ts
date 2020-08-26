@@ -8,13 +8,13 @@ import { CategoryApi, CategoriesApi, FactApi } from './model';
 export const fetchRandomFact = (): Promise<FactApi> => {
   return fetch(randomFactUrl)
     .then((response) => response.json())
-    .catch(() => null);
+    .catch(() => <FactApi>{});
 };
 
 export const fetchCategoriesApi = (): Promise<CategoriesApi> => {
   return fetch(categoriesUrl)
     .then((response) => response.json())
-    .catch(() => null);
+    .catch(() => []);
 };
 
 export const fetchFactFromCategory = (
@@ -22,5 +22,5 @@ export const fetchFactFromCategory = (
 ): Promise<FactApi> => {
   return fetch(generateCategoryFactUrl(category))
     .then((response) => response.json())
-    .catch(() => null);
+    .catch(() => <FactApi>{});
 };
