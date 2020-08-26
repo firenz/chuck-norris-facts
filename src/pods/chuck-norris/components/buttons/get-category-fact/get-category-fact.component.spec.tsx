@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -17,11 +17,11 @@ describe('Get Category Facts button component specs', () => {
         <GetCategoryFactComponent {...props} />
       </ThemeProvider>,
     );
-    const dotsElement = getByTestId(
+    const categoryFactsElement = getByTestId(
       'get-category-fact-component',
     ) as HTMLInputElement;
 
-    expect(dotsElement).toBeInTheDocument();
+    expect(categoryFactsElement).toBeInTheDocument();
   });
   it('should call onClick function when clicked', () => {
     const props = {
@@ -34,13 +34,14 @@ describe('Get Category Facts button component specs', () => {
         <GetCategoryFactComponent {...props} />
       </ThemeProvider>,
     );
-    const dotsElement = getByTestId(
+    const categoryFactsElement = getByTestId(
       'get-category-fact-component',
     ) as HTMLInputElement;
+    act(() => {
+      fireEvent.click(categoryFactsElement);
+    });
 
-    fireEvent.click(dotsElement);
-
-    expect(dotsElement).toBeInTheDocument();
+    expect(categoryFactsElement).toBeInTheDocument();
     expect(props.onClick).toHaveBeenCalled();
   });
 });

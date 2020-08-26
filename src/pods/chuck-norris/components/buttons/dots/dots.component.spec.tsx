@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -31,8 +31,9 @@ describe('Dots button component specs', () => {
       </ThemeProvider>,
     );
     const dotsElement = getByTestId('dots-component') as HTMLInputElement;
-
-    fireEvent.click(dotsElement);
+    act(() => {
+      fireEvent.click(dotsElement);
+    });
 
     expect(dotsElement).toBeInTheDocument();
     expect(props.onClick).toHaveBeenCalled();

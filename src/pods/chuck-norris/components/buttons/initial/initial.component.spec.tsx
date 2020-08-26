@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -32,7 +32,9 @@ describe('Initial button component specs', () => {
     );
     const initialElement = getByTestId('initial-component') as HTMLInputElement;
 
-    fireEvent.click(initialElement);
+    act(() => {
+      fireEvent.click(initialElement);
+    });
 
     expect(initialElement).toBeInTheDocument();
     expect(props.onClick).toHaveBeenCalled();

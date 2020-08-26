@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -39,7 +39,9 @@ describe('Category Item menu component specs', () => {
       'category-item-component',
     ) as HTMLInputElement;
 
-    fireEvent.click(categoryItemElement);
+    act(() => {
+      fireEvent.click(categoryItemElement);
+    });
 
     expect(categoryItemElement).toBeInTheDocument();
     expect(props.onClick).toHaveBeenCalled();

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -35,8 +35,9 @@ describe('Fact Card Copy button component specs', () => {
       </ThemeProvider>,
     );
     const copyElement = getByTestId('fact-copy-component') as HTMLInputElement;
-
-    fireEvent.click(copyElement);
+    act(() => {
+      fireEvent.click(copyElement);
+    });
 
     expect(copyElement).toBeInTheDocument();
     expect(props.copyToClipboard).toHaveBeenCalled();
@@ -54,8 +55,10 @@ describe('Fact Card Copy button component specs', () => {
       </ThemeProvider>,
     );
     const copyElement = getByTestId('fact-copy-component') as HTMLInputElement;
+    act(() => {
+      fireEvent.mouseLeave(copyElement);
+    });
 
-    fireEvent.mouseLeave(copyElement);
 
     expect(copyElement).toBeInTheDocument();
     expect(props.resetCopiedText).toHaveBeenCalled();

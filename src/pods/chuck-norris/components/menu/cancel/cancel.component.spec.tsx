@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -32,7 +32,9 @@ describe('Cancel menu component specs', () => {
     );
     const cancelElement = getByTestId('cancel-component') as HTMLInputElement;
 
-    fireEvent.click(cancelElement);
+    act(() => {
+      fireEvent.click(cancelElement);
+    });
 
     expect(cancelElement).toBeInTheDocument();
     expect(props.onClick).toHaveBeenCalled();

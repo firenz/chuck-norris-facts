@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from 'core';
@@ -36,7 +36,9 @@ describe('Clear Facts menu component specs', () => {
       'clear-facts-component',
     ) as HTMLInputElement;
 
-    fireEvent.click(clearFactsElement);
+    act(() => {
+      fireEvent.click(clearFactsElement);
+    });
 
     expect(clearFactsElement).toBeInTheDocument();
     expect(props.onClick).toHaveBeenCalled();
