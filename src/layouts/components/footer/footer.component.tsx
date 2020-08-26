@@ -5,7 +5,7 @@ import { FooterLayout } from './footer.styles';
 
 export const Footer: React.FC = () => {
   return (
-    <FooterLayout>
+    <FooterLayout data-testid="footer-layout">
       <span role="img" aria-label="Copyright">
         &copy;
       </span>{' '}
