@@ -31,6 +31,7 @@ export const GetCategoryFactComponent: React.FC<Props> = (props: Props) => {
 
   return (
     <GetCategoryFactLayout
+      data-testid="get-category-fact-component"
       onClick={onClick}
       aria-label="Press to get a fact from the selected category"
     >
