@@ -12,6 +12,7 @@ export const CancelIconComponent: React.FC<Props> = (props: Props) => {
 
   return (
     <CancelIconLayout
+      data-testid="cancel-icon-component"
       onClick={onClick}
       aria-label="Press to close category menu"
     >
