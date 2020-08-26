@@ -17,14 +17,17 @@ export const FactCardCopyButton: React.FC<Props> = (props: Props) => {
   const { copied, copyToClipboard, resetCopiedText } = props;
   if (!copied) {
     return (
-      <CopyLayout onClick={copyToClipboard}>
+      <CopyLayout data-testid="fact-copy-component" onClick={copyToClipboard}>
         <IconLayout src={copyIcon} aria-hidden="true" />
         {`Copy to clipboard`}
       </CopyLayout>
     );
   } else {
     return (
-      <CopiedLayout onMouseLeave={resetCopiedText}>
+      <CopiedLayout
+        data-testid="fact-copy-component"
+        onMouseLeave={resetCopiedText}
+      >
         <IconLayout src={checkIcon} aria-hidden="true" />
         {`Copied!`}
       </CopiedLayout>
