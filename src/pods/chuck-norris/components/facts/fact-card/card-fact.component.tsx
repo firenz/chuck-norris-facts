@@ -24,10 +24,17 @@ export const FactCardComponent: React.FC<Props> = (props: Props) => {
   } = props;
   return (
     <Card
-      title={<FactCardHeader>{`Fact # ${id} • ${category}`}</FactCardHeader>}
-      content={<FactCardContentLayout>{fact}</FactCardContentLayout>}
+      title={
+        <FactCardHeader data-testid="fact-header-component">{`Fact # ${id} • ${category}`}</FactCardHeader>
+      }
+      content={
+        <FactCardContentLayout data-testid="fact-content-component">
+          {fact}
+        </FactCardContentLayout>
+      }
       action={
         <FactCardCopyButton
+          data-testid="fact-copy-component"
           copied={copied}
           copyToClipboard={copyToClipboard}
           resetCopiedText={resetCopiedText}
