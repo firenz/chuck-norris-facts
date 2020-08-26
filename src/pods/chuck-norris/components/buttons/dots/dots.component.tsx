@@ -11,6 +11,7 @@ export const DotsComponent: React.FC<Props> = (props: Props) => {
 
   return (
     <DotsLayout
+      data-testid="dots-component"
       onClick={onClick}
       aria-label="Press to open category menu to choose a new category to get facts"
     >
