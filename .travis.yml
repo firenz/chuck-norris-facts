@@ -12,9 +12,9 @@ script:
   - npm run deploy:gh-pages
 deploy:
   provider: pages
-  skip_cleanup: true
+  cleanup: true
   github_token: $github_token
   local_dir: dist
-  keep_history: true
+  keep_history: false
   on:
     branch: master
