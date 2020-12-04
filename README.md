@@ -1,20 +1,19 @@
-# Programming test for [Codeko](http://codeko.com/) [![Build Status](https://travis-ci.com/Firenz/codeko-jobtest.svg?branch=master)](https://travis-ci.com/Firenz/codeko-jobtest)
-Programming test for a Front End Developer position in [Codeko](http://codeko.com/).
+# Chuck Norris Facts [![Build Status](https://travis-ci.com/Firenz/chuck-norris-facts.svg?branch=master)](https://travis-ci.com/Firenz/chuck-norris-facts)
 
-**[Demo app live version](https://firenz.github.io/codeko-jobtest/)**
+This is a React web project that consumes the API https://api.chucknorris.io/
 
-**[List of PRs](https://github.com/Firenz/codeko-jobtest/pulls?q=is%3Apr+is%3Aclosed)**
+It contains categories in which the user chooses what kind of random Chuck Norris fact wants to see. Also, when the user gets a new fact, the previously obtained facts must be still visible, even when you refresh the page in the browser. And most importantly, you can copy the facts just by clicking a button so you can share the Chuck Norris with your friends and have some laughs!
 
-**[List of issues](https://github.com/Firenz/codeko-jobtest/issues?q=is%3Aissue+is%3Aclosed)**
+Lastly, this small project tried to be as professional as possible in matters of organization, small commits, PRs, tooling, bundling, basic UI/UX... Just in the case of anyone making a fork of this project, is legible and quick to understand.
 
-**[Project kanban board](https://github.com/Firenz/codeko-jobtest/projects/2)**
+## Some useful links of the project
+**[Demo app live version](https://firenz.github.io/chuck-norris-facts/)**
 
-## Description of the project
-> Make a React web project that consumes the API https://api.chucknorris.io/
->
-> The web must have categories in which the user chooses what kind of random Chuck Norris fact wants to see. When the user gets a new fact, the previously obtained facts must be still visible. And when the user refreshes the web, the obtained facts must remain on the page.
->
-> Also, treat this project as a professional project in the matter of small commits, PRs, tooling, bundling, basic UI/UX...
+**[List of PRs](https://github.com/Firenz/chuck-norris-facts/pulls?q=is%3Apr+is%3Aclosed)**
+
+**[List of issues](https://github.com/Firenz/chuck-norris-facts/issues?q=is%3Aissue+is%3Aclosed)**
+
+**[Project kanban board](https://github.com/Firenz/chuck-norris-facts/projects/2)**
 
 # How to use
 - Download the project
@@ -35,7 +34,7 @@ npm run build:dev
 ```
 npm run build:prod
 ```
-As a side note, a production build with this app is running in the [GitHub Pages of this repository](https://firenz.github.io/codeko-jobtest/).
+As a side note, a production build with this app is running in the [GitHub Pages of this repository](https://firenz.github.io/chuck-norris-facts/).
 
 ## Run tests
 - To run the tests of the project once
@@ -67,6 +66,9 @@ npm run build:stats
 - Polishing UI on edge cases: Though UI now looks pretty good compared to the initial UI version, in some extreme cases (on mobile and with Chrome & Safari browsers) the category menu components weren't displayed correctly. Also, the footer could be more polished in the mobile version (instead of hiding behind the buttons, have a conditional bottom margin depending on whether the fixated button is displayed or not). Finally, the standalone version needs more polishing for wider screens now that were in the era of 4K or 8K monitors.
 - Testing coverage: Given personal circumstances and the time restriction for the project, only pretty basic jest tests were done. Also couldn't test the styled-components for these reasons.
 
+## Things to be done in the future
+- Update the UI to use CSS grid in the main layout, so making a responsive version is much more easier than using Flexbox for edge cases (on mobile and 4K desktops).
+
 # Development environment
 - Language: Typescript
 - Frameworks: React
@@ -85,7 +87,7 @@ npm run build:stats
 - Browser: Chrome v83 64-bits
 
  # License
-This project is licensed under the [MIT license](https://github.com/Firenz/codeko-jobtest/blob/master/LICENSE).
+This project is licensed under the [MIT license](https://github.com/Firenz/chuck-norris-facts/blob/master/LICENSE).
 
 Chuck Norris illustration obtained from [PngKey webite](https://www.pngkey.com/detail/u2q8y3o0t4w7o0a9_chuck-norris-facts-have-spread-around-the-world/).
 
