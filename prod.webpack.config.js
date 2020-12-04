@@ -5,7 +5,7 @@ const base = require('./base.webpack.config');
 module.exports = merge(base, {
   mode: 'production',
   output: {
-    publicPath: '/codeko-jobtest/',
+    publicPath: '/chuck-norris-facts/',
     filename: '[name].[chunkhash].js',
   },
   module: {
