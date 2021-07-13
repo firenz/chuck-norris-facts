@@ -1,4 +1,4 @@
-# Chuck Norris Facts [![Build Status](https://travis-ci.com/Firenz/chuck-norris-facts.svg?branch=master)](https://travis-ci.com/Firenz/chuck-norris-facts)
+# Chuck Norris Facts ![Build Status](https://github.com/Firenz/chuck-norris-facts/actions/workflows/deploy.yml/badge.svg)
 
 This is a React web project that consumes the API https://api.chucknorris.io/
 
