@@ -1,0 +1,33 @@
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: master
+  pull_request:
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@master
+
+      - name: Install 🔧
+        run: npm install
+
+      - name: Lint 🧐
+        run: npm run lint:fix
+
+      - name: Prettier 💅
+        run: npm run format
+
+      - name: Test 🚨
+        run: npm test
+
+      - name: Build 🏗️
+        run: npm run build:prod
+
+      - name: Deploy 🚀
+        run: npm run deploy:gh-pages
+{"mode":"full","isActive":false}

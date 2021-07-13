@@ -22,16 +22,16 @@
   ],
   "scripts": {
     "start": "rimraf dist && webpack-dev-server --mode development --open --config dev.webpack.config.js",
-    "build:dev": "rimraf dist && webpack --mode development --config dev.webpack.config.js",
-    "build:prod": "rimraf dist && webpack --mode production --config prod.webpack.config.js",
-    "build:stats": "rimraf dist && webpack --mode development --config perf.webpack.config.js",
-    "deploy:gh-pages": "npm run build:prod && gh-pages-clean && gh-pages -d dist -r https://$github_token@github.com/Firenz/chuck-norris-facts.git",
     "test": "jest --verbose -c ./config/test/jest.json",
     "test:watch": "npm test -- --watchAll -i --no-cache",
     "test:coverage": "rimraf coverage && jest -c ./config/test/jest.coverage.json --verbose",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier --write \"{,!(node_modules)/**/}*.js\""
+    "format": "prettier --write \"{,!(node_modules)/**/}*.js\"",
+    "build:dev": "rimraf dist && webpack --mode development --config dev.webpack.config.js",
+    "build:prod": "rimraf dist && webpack --mode production --config prod.webpack.config.js",
+    "build:stats": "rimraf dist && webpack --mode development --config perf.webpack.config.js",
+    "deploy:gh-pages": "gh-pages-clean && gh-pages -d dist -b gh-pages"
   },
   "repository": {
     "type": "git",
@@ -82,7 +82,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^2.5.1",
     "file-loader": "^6.0.0",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.4.0",
