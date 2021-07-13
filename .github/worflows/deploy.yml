@@ -4,6 +4,10 @@ on:
   push:
     branches: master
   pull_request:
+    branches: master
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   deploy-gh-pages:
@@ -30,4 +34,3 @@ jobs:
 
       - name: Deploy 🚀
         run: npm run deploy:gh-pages
-{"mode":"full","isActive":false}
