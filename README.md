@@ -77,7 +77,7 @@ npm run build:stats
   - Environment: Node v12.18.2
   - Bundling: Webpack
   - Testing: Jest
-  - CI: Travis CI
+  - CI: GitHub Actions
   - Transpilation: Babel
   - Linter: ES Lint
   - Code Formatter: Prettier
